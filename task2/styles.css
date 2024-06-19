@@ -1,0 +1,143 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('bg.png');
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size:cover;
+     
+}
+
+header {
+    width: 100%;
+    text-align: center;
+    background-color: #0d34545d;
+    padding: 20px 0;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-grow: 1;
+    width: 100%;
+    padding-top: 150px; 
+    box-sizing: border-box;
+}
+
+.input-container, .filter-container {
+    margin-bottom: 20px;
+    text-align: center;
+    width: 500px;
+}
+
+.container {
+    background-color: #c76048;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.task-container {
+    background-color: #0d4d53ce;
+    padding: 20px;
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 500px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+    color: rgb(250, 255, 255);
+}
+
+input[type="text"], input[type="datetime-local"], select {
+    width: calc(100% - 40px);
+    padding: 10px;
+    font-size: 16px;
+    border: 5px solid #b10e3f;
+    border-radius: 25px;
+    margin-bottom: 10px;
+    background-color: #c1d0d1;
+    color: #191616f0;
+}
+
+input[type="text"]:focus, input[type="datetime-local"]:focus, select:focus {
+    border-color: #0b7070;
+    background-color: #ffffff;
+    outline: none;
+}
+
+button {
+    width: 180px;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    background-color: #b13131;
+    color: rgb(249, 242, 242);
+    cursor: pointer;
+    font-weight: bolder;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #7bbd7e;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: #f9f9f9;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+}
+
+li:hover {
+    background-color: #85dba0;
+}
+
+.Not_Important {
+    border-left: 15px solid green;
+}
+
+.Important {
+    border-left: 15px solid orange;
+}
+
+.Urgent {
+    border-left: 15px solid red;
+}
+
+.delete-icon {
+    cursor: pointer;
+    color: #eed6d6;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.delete-icon:hover {
+    color: #290404;
+}

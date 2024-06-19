@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>To-Do List</h1>
+    </header>
+    <main>
+        <div class="input-container">
+            <input type="text" id="taskInput" placeholder="Enter a new task">
+            <select id="priorityInput">
+                <option value="Not_Important">Not Important</option>
+                <option value="Important">Important</option>
+                <option value="Urgent">Urgent</option>
+            </select>
+            <input type="datetime-local" id="deadlineInput">
+            <select id="categoryInput">
+                <option value="Personal">Personal</option>
+                <option value="Work">Work</option>
+                <option value="Entertainment">Entertainment</option>
+            </select>
+            <button onclick="addTask()">Add Task</button>
+        </div>
+        <div class="filter-container">
+            <select id="filterInput" onchange="filterTasks()">
+                <option value="All">All</option>
+                <option value="Not_Important">Not Important</option>
+                <option value="Important">Important</option>
+                <option value="Urgent">Urgent</option>
+            </select>
+        </div>
+        <div class="task-container" id="personalContainer">
+            <h2>Personal</h2>
+            <ul id="personalList"></ul>
+        </div>
+        <div class="task-container" id="workContainer">
+            <h2>Work</h2>
+            <ul id="workList"></ul>
+        </div>
+        <div class="task-container" id="entertainmentContainer">
+            <h2>Entertainment</h2>
+            <ul id="entertainmentList"></ul>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
